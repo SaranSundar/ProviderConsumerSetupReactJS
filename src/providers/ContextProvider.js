@@ -9,12 +9,12 @@ export default class ContextProvider extends Component {
             context: this.props.getNewContextModel(this),
         }
         let ProviderContext = this.props.ProviderContext;
-        console.log("Constructor for " + ProviderContext.dispatch + " Provider in ContextProvider");
+        console.log("Constructor for " + ProviderContext.displayName + " Provider in ContextProvider");
     }
 
     render() {
         let ProviderContext = this.props.ProviderContext;
-        console.log("Rendering " + ProviderContext.dispatch + " Provider");
+        console.log("Rendering " + ProviderContext.displayName + " Provider");
         return (
             <Fragment>
                 <ProviderContext.Provider value={{...this.state, context: this.state.context}}>
