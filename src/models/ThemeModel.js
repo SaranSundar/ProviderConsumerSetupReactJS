@@ -47,12 +47,12 @@ class ThemeModel {
     }
 }
 
-export const getNewContextModel = (provider) => {
+export const getNewThemeContextModel = (provider) => {
     return {
         model: new ThemeModel(provider),
     }
 }
 
 // This default value will never be used but is needed according to React Docs for Context
-export const ThemeContext = React.createContext(getNewContextModel());
+export const ThemeContext = React.createContext(getNewThemeContextModel());
 ThemeContext.displayName = "ThemeContext";
