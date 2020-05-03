@@ -5,8 +5,20 @@
 
 .Button {
     color: red;
-    background: blue;
+    background: yellow;
     font-size: 25px;
     font-weight: bold;
     border-radius: 10px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.Button:disabled {
+    background: yellowgreen;
+}
+
+.ChangeText {
+    color: red;
+    font-size: 30px;
 }

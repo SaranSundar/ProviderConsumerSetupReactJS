@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import ThemeProvider from "./ThemeProvider";
 import App from "../components/App/App";
+import ContextProvider from "./ContextProvider";
+import {getNewContextModel, ThemeContext} from "../models/ThemeModel";
 
 class MultiProvider extends Component {
 
@@ -12,9 +13,9 @@ class MultiProvider extends Component {
     render() {
         // This is where you would place all your providers, all nested above App
         return (
-            <ThemeProvider>
+            <ContextProvider getNewContextModel={getNewContextModel} ProviderContext={ThemeContext}>
                 <App/>
-            </ThemeProvider>
+            </ContextProvider>
         );
     }
 }
