@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import ThemeProvider from "../../providers/ThemeProvider";
-import App from "../App/App";
+import ThemeProvider from "./ThemeProvider";
+import App from "../components/App/App";
 
-class ProviderWrapper extends Component {
+class MultiProvider extends Component {
 
     constructor(props) {
         super(props);
-        console.log("Constructor of Provider Wrapper");
+        console.log("Constructor of Multi Provider");
     }
 
     render() {
@@ -19,4 +19,4 @@ class ProviderWrapper extends Component {
     }
 }
 
-export default ProviderWrapper;
+export default MultiProvider;

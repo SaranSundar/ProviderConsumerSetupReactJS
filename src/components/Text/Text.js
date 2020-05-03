@@ -1,17 +1,19 @@
 import React, {Component} from 'react';
+import "./Text.css";
 
-class Test extends Component {
+class Text extends Component {
     constructor(props) {
         super(props);
-        console.log("In constructor of test");
+        console.log("In constructor of text");
     }
 
     render() {
-        console.log("Rendering Test")
+        // We can confirm provider works because this component does not get re-rendered when background color changes
+        console.log("Rendering Text")
         return (
-            <div>TEST</div>
+            <div className="Text">THIS IS TEXT</div>
         );
     }
 }
 
-export default Test;
+export default Text;

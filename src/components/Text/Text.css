@@ -1,0 +1,8 @@
+.Text{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 55px;
+    font-weight: bold;
+    color: aqua;
+}

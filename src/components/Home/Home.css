@@ -1,0 +1,12 @@
+.Home {
+    width: 100%;
+    height: 100%;
+}
+
+.Button {
+    color: red;
+    background: blue;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
